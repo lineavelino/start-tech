@@ -1,22 +1,29 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+
+p {
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.lista-footer {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
 li {
-    text-decoration: underline;
-}
-
-#login {
-    background-color: black;
-    color: white;
-}
-
-#registre {
-    background-color: blue;
-    color: white;
-}
-
-.copy {
-    font-size: 8px;
+    padding: 10px;
 }
