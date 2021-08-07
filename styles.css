@@ -15,9 +15,30 @@ a {
     text-decoration: none;
     font-weight: 700;
 }
+
 body{
     height: 100vh;
     background: linear-gradient(30deg, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    max-width: 100px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
 }
 
 .container {
@@ -48,4 +69,22 @@ body{
 
 .form button {
     width: 15%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.flex div {
+    border-radius: 1%;
+    margin: 15px;
+    flex-basis: 100%;
+    max-width: 300px;
+    background-color: rgba(146, 27, 96, 0.2);
+}
+
+.flex div img {
+    border-radius: 1%;
 }
