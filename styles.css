@@ -39,6 +39,8 @@ header ul {
 
 header ul li {
     padding: 5px;
+    border: thick double black;
+    padding: 15px;
 }
 
 .container {
