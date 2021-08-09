@@ -64,6 +64,24 @@ header ul li a:hover {
     font-size: 25px;
 }
 
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
 #about p {
     max-width: 600px;
     margin: 0 auto;

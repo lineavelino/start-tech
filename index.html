@@ -32,31 +32,36 @@
             </li>
         </ul>
     </header>
-    <section class="container">
-        <div class="name">
-            <h1>Aline Avelino</h1>
-            <h5>Fullstack Developer</h5>
-        </div>
 
-        <div id="arrow">
-            <i class="fas fa-sort-down"></i>
-        </div>
-
-        <div id="about">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam optio deserunt excepturi, illum accusamus
-                suscipit architecto reiciendis nam ipsa cumque?</p>
-        </div>
-
-        <div class="form">
-            <div>
-                <p>Deixe seu contato!</p>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Aline Avelino</h1>
+                <h5>Fullstack Developer</h5>
             </div>
-            <form action="">
-                <input type="text" placeholder="Seu melhor email: ">
-                <button>Enviar</button>
-            </form>
-        </div>
-    </section>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam optio deserunt excepturi, illum
+                    accusamus
+                    suscipit architecto reiciendis nam ipsa cumque?</p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email: ">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <div class="flex">
         <div>
             <img src="./programing.svg" alt="">
@@ -73,6 +78,15 @@
                 provident soluta magnam velit vel eveniet.</p>
         </div>
     </div>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about');
+            display.classList.toggle('active')
+        }
+    </script>
 </body>
 
 </html>
