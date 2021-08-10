@@ -47,3 +47,16 @@ criar({
     propriedade: 1,
 })
 //criar("Aline") // dá erro
+
+// Never
+function loopInfinito(): never {
+    while (true) { }
+}
+
+function erro(mensagem: string): never {
+    throw new Error(mensagem);
+}
+
+function falha() { // infere que é never, pois chama uma função do tipo never
+    return erro('Algo falhou');
+}
