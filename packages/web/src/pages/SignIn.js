@@ -1,13 +1,53 @@
+import { useState } from 'react';
+
 export default function SignIn() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        fetch('http://127.0.0.1:8000/authenticate', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email,
+                password
+            })
+        })
+            .then((response) => response.json())
+            .then(() => {
+                console.log('Success!');
+            });
+    };
+
+    const handleEmailChange = (event) => setEmail(event.target.value);
+
+    const handlePasswordChange = (event) => setPassword(event.target.value);
+
     return (
-        <form action="/authenticate" method="POST">
+        <form onSubmit={handleSubmit}>
             <fieldset>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" inputmode="email" autocomplete="username"></input>
+                <label htmlFor="email">E-mail</label>
+                <input
+                    id="email"
+                    type="email"
+                    value={email}
+                    onChange={handleEmailChange}
+                    inputmode="email"
+                    autoComplete="username"
+                />
             </fieldset>
             <fieldset>
-                <label for="password">Senha</label>
-                <input type="password" name="password" id="password" autocomplete="current-password"></input>
+                <label htmlFor="password">Senha</label>
+                <input
+                    id="password"
+                    type="password"
+                    autoComplete="current-password"
+                    value={password}
+                    onChange={handlePasswordChange}
+                />
             </fieldset>
             <button type="submit">Entrar</button>
         </form>
