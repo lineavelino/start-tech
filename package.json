@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lineavelino/client-server-example/issues"
   },
-  "homepage": "https://github.com/lineavelino/client-server-example#readme"
+  "homepage": "https://github.com/lineavelino/client-server-example#readme",
+  "dependencies": {
+    "graphql": "^15.5.1"
+  }
 }
