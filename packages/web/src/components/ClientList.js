@@ -5,7 +5,7 @@ import { useQuery } from 'react-apollo';
 const GET_CLIENT_LIST = gql`
     query GET_CLIENT_LIST($skip: Int!, $take: Int!) {
         clients(options: {
-            skip: $skip
+            skip: $skip,
             take: $take
         }) {
             items {
@@ -20,8 +20,8 @@ const GET_CLIENT_LIST = gql`
 
 const PAGE_SIZE = 10;
 
-export function ClientList() {
-    const { data, error, loading, fetchMore, called } = useQuery(GET_CLIENT_LIST, {
+export function ClientList({ onSelectClient }) {
+    const { data, error, loading, fetchMore } = useQuery(GET_CLIENT_LIST, {
         fetchPolicy: 'cache-and-network',
         variables: {
             skip: 0,
@@ -30,6 +30,8 @@ export function ClientList() {
     });
 
     const clients = data?.clients.items ?? [];
+
+    const handleSelectClient = (client) => () => onSelectClient?.(client.id);
 
     const handleLoadMore = () => {
         fetchMore({
@@ -46,12 +48,12 @@ export function ClientList() {
                     clients: {
                         ...result.clients,
                         items: result.clients.items.concat(fetchMoreResult.clients.items),
-                        totalItems: fetchMoreResult.clients.totalItems
-                    }
-                }
-            }
-        })
-    }
+                        totalItems: fetchMoreResult.clients.totalItems,
+                    },
+                };
+            },
+        });
+    };
 
     if (error)
         return (
@@ -60,7 +62,7 @@ export function ClientList() {
             </section>
         );
 
-    if (loading && !called)
+    if (loading && !data)
         return (
             <section>
                 <p>Carregando...</p>
@@ -72,7 +74,7 @@ export function ClientList() {
             <ul>
                 {clients.map((client) => {
                     return (
-                        <li key={client.id}>
+                        <li key={client.id} onClick={handleSelectClient(client)}>
                             <p>{client.name}</p>
                             <p>{client.email}</p>
                         </li>
