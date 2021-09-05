@@ -13,3 +13,20 @@ for (var i = 0; i < 100; i++) {
         break
     }
 }
+
+
+// while quando não sabemos exatamente quando parar
+var achou = false;
+
+var numeroSorteado = 10;
+var possivelValor = 0
+
+// ! inverte o valor
+while (!achou) {
+    possivelValor += 1;
+    if (numeroSorteado === possivelValor) {
+        achou = true
+    } else {
+        console.log('Possível valor não corresponde ao número sorteado ' + possivelValor)
+    }
+}
