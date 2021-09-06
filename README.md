@@ -1,5 +1,5 @@
 # Validação de CPF
 
-## Funcionalidades:
+## Funcionalidade:
 
-1) Validar quantidade de caracteres.
+- Verifica se o CPF digitado é válido ou não.
