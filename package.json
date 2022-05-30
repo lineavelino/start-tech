@@ -1,0 +1,22 @@
+{
+  "name": "@dev-demands/root",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lineavelino/client-server-example.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lineavelino/client-server-example/issues"
+  },
+  "homepage": "https://github.com/lineavelino/client-server-example#readme",
+  "dependencies": {
+    "graphql": "^15.5.1"
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "total": 3
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@dev-demands/web",
+      "version": "0.1.0",
+      "private": true,
+      "dependencies": {
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-scripts": "4.0.3",
+        "web-vitals": "^1.0.1"
+      },
+      "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+      },
+      "eslintConfig": {
+        "extends": [
+          "react-app",
+          "react-app/jest"
+        ]
+      },
+      "browserslist": {
+        "production": [
+          ">0.2%",
+          "not dead",
+          "not op_mini all"
+        ],
+        "development": [
+          "last 1 chrome version",
+          "last 1 firefox version",
+          "last 1 safari version"
+        ]
+      }
+    },
+    "prefix": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": true,
+    "storeDir": "/home/lineavelino/.pnpm-store/v3",
+    "virtualStoreDir": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/jest-dom/5.14.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/jest-dom",
+      "rawSpec": "^5.11.4"
+    }
+  },
+  "5 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react/17.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react",
+      "rawSpec": "^17.0.2"
+    }
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-dom/17.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-dom",
+      "rawSpec": "^17.0.2"
+    }
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-scripts/4.0.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-scripts",
+      "rawSpec": "4.0.3"
+    }
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/web-vitals/1.1.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "web-vitals",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "9 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/user-event/12.8.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/user-event",
+      "rawSpec": "^12.1.10"
+    }
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/react/11.2.7",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/react",
+      "rawSpec": "^11.1.0"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.2",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "12 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.2",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "13 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.14.1",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "14 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.14.1",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "15 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.2",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "16 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.2",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "17 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-scripts/4.0.3",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "18 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-scripts/4.0.3",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "19 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/user-event/12.8.3",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "20 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/user-event/12.8.3",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/web-vitals/1.1.2",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "22 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/web-vitals/1.1.2",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/11.2.7",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "24 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/11.2.7",
+    "requester": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "25 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/react-router-dom failed, reason: Socket timeout",
+      "type": "system",
+      "errno": "ERR_SOCKET_TIMEOUT",
+      "code": "ERR_SOCKET_TIMEOUT"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/react-router-dom"
+  },
+  "26 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "request to https://registry.npmjs.org/react-router-dom failed, reason: Socket timeout",
+      "type": "system",
+      "errno": "ERR_SOCKET_TIMEOUT",
+      "code": "ERR_SOCKET_TIMEOUT"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/react-router-dom"
+  },
+  "27 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/react-router-dom: request to https://registry.npmjs.org/react-router-dom failed, reason: Socket timeout",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "Error: GET https://registry.npmjs.org/react-router-dom: request to https://registry.npmjs.org/react-router-dom failed, reason: Socket timeout\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:86252:18)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at runNextTicks (internal/process/task_queues.js:64:3)\n    at processTimers (internal/timers.js:497:9)"
+    }
+  },
+  "28 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 1,
+    "pkgsStack": [],
+    "prefix": "/home/lineavelino/projetos/start-tech/client-server-example/packages/web",
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/react-router-dom: request to https://registry.npmjs.org/react-router-dom failed, reason: Socket timeout",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "Error: GET https://registry.npmjs.org/react-router-dom: request to https://registry.npmjs.org/react-router-dom failed, reason: Socket timeout\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:86252:18)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at runNextTicks (internal/process/task_queues.js:64:3)\n    at processTimers (internal/timers.js:497:9)"
+    }
+  }
+}
